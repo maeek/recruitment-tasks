@@ -1,0 +1,95 @@
+$newsletter-top-padding: rem-calc(30);
+$newsletter-bottom-padding: rem-calc(40);
+
+%shb-newsletter-form {
+  .shb-form-inline {
+    margin-bottom :rem-calc(15);
+  }
+
+  .shb-btn {
+    min-width: rem-calc(140);
+  }
+
+  input[type="text"] {
+    @extend .shb-input;
+    margin-right: rem-calc(20);
+    width: 100%;
+    max-width: 400px;
+
+    @include until ($tablet) {
+      margin-right: 0;
+    }
+  }
+
+  .shb-checkbox {
+    label {
+      font-size: $font-size-small;
+      line-height: 1.3;
+
+      &:before {
+        font-size: 10px;
+        line-height: 15px;
+      }
+    }
+  }
+
+  @include until ($tablet) {
+    margin-top: rem-calc(20);
+
+    .shb-input-group {
+      text-align: left;
+    }
+  }
+}
+
+%shb-newsletter-text {
+  h3 {
+    font-weight: bold;
+    font-size: $font-size-large;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  p {
+    font-size: $font-size-base;
+    line-height: 1.56;
+    margin-top: rem-calc(10);
+    margin-bottom: 0;
+  }
+}
+
+%shb-newsletter-widget-vertical {
+  .shb-newsletter-form {
+    margin-top: rem-calc(30);
+  }
+}
+
+%shb-newsletter-without-background {
+  color: $newsletter-light-color;
+
+  h3 {
+    color: $newsletter-light-color;
+  }
+
+  a {
+    color: $newsletter-light-color;
+  }
+}
+
+%shb-newsletter-background {
+  background: $newsletter-background;
+  color: $newsletter-with-background-color;
+  padding: $newsletter-top-padding 0 $newsletter-bottom-padding;
+
+  h3 {
+    color: $newsletter-with-background-color;
+  }
+
+  input[type="text"] {
+    border-color: $newsletter-background;
+  }
+
+  a {
+    color: $newsletter-with-background-color;
+  }
+}

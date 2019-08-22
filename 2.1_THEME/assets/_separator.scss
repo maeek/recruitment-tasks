@@ -1,0 +1,16 @@
+%shb-text-header {
+  margin-top: rem-calc(20);
+  h2, p {
+    margin: 0;
+    color: $separator-color;
+  }
+  h2 {
+    font-size: $header-size;
+    line-height: 1.2;
+  }
+  p {
+    font-size: $description-size;
+    margin-top: rem-calc(5);
+    line-height: 1.56;
+  }
+}

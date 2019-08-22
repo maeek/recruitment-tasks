@@ -1,0 +1,13 @@
+.shb-newsletter-widget-5 {
+  padding: $newsletter-top-padding 0 $newsletter-bottom-padding;
+  @extend %shb-newsletter-widget-vertical;
+  @extend %shb-newsletter-without-background;
+
+  .shb-newsletter-text {
+    @extend %shb-newsletter-text;
+  }
+
+  .shb-newsletter-form {
+    @extend %shb-newsletter-form;
+  }
+}

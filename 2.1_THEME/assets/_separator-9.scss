@@ -1,0 +1,6 @@
+.shb-text-header-9 {
+  height: 120px;
+  @if variable_exists(set__blank_separator_height) {
+    height: $set__blank_separator_height;
+  }
+}

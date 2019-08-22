@@ -1,0 +1,23 @@
+.shb-banner-12 {
+  .shb-blankslate-banner {
+    @include banner-poportion-after(56.66%);
+    @extend %shb-blankslate-banner-mobile;
+
+    figure {
+      @include banner-proportion-figure();
+    }
+  }
+  figure {
+    @extend %shb-banner-figure;
+    height: auto;
+    width: 100%;
+
+    figcaption {
+      @extend %shb-banner-figcaption;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

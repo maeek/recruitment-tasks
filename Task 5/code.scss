@@ -1,0 +1,29 @@
+/*
+  File: assets/_header-2.scss
+  Line: 52
+ */
+
+.shb-submenu {
+    background-color: $header-navbar-light-background;
+    /* My code */
+    .shb-sub-submenu {
+        position: absolute;
+        top: -5px;
+        left: 100%;
+        display: none;
+        width: auto;
+        min-width: 150px;
+        padding: 5px 0;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.10);
+        background-color: $header-navbar-light-background;
+    }
+    li {
+        position: relative;
+    }
+    li:hover {
+        .shb-sub-submenu {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

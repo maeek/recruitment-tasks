@@ -1,0 +1,49 @@
+.shb-footer-6 {
+  .shb-footer-menu-label {
+    @extend %footer-menu-label;
+    @extend %footer-menu-label-light;
+  }
+
+  .shb-footer-social {
+    @extend %social-links;
+    margin-bottom: 30px;
+    padding-top: 5px;
+
+    @include from ($desktop) {
+      > div {
+        margin-left: auto;
+      }
+    }
+
+    a {
+      @extend %social-link;
+      @extend %social-color-light;
+    }
+  }
+
+  .shb-footer-nav {
+    @extend %footer-menu;
+    @extend %footer-menu-light;
+  }
+
+  .shb-footer-copyright {
+    @extend %footer-copyright;
+    @extend %copyright-light;
+    @extend %align-right;
+
+    @include until ($desktop) {
+      text-align: left;
+    }
+  }
+
+  .shb-footer-background {
+    background: $footer-background;
+
+    @include until ($desktop) {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}

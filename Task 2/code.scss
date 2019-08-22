@@ -1,0 +1,17 @@
+/*
+    Clicking in menu on "Kategoria 1" redirects to "/kategoria/kategoria-1"
+    Wygląd sklepu -> nawigacja -> Edycja linku -> zmiana # na /kategoria/kategoria-1
+
+    File: assets/_theme.scss
+    Line: 1424
+*/
+
+.shb-sidebar-list {
+    display: flex;
+    flex-direction: column;
+    li {
+        &:nth-of-type(1) {
+            order: 3;
+        }
+    }
+}

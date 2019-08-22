@@ -1,0 +1,11 @@
+/* 
+  File: assets/_header-2.scss
+  Line: 43 -> #mainNav
+*/
+
+// Added
+&:nth-of-type(3) {
+    >a {
+        color: red;
+    }
+}
